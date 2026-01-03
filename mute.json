@@ -18,8 +18,8 @@
 
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
-              "selectNames": ".module-card-item-title a",
-              "selectLinks": ".module-card-item-title a",
+              "selectNames": ".search-box .thumb-txt",
+              "selectLinks": ".search-box .thumb-menu a",
               "preferShorterName": true
             },
 
@@ -55,4 +55,5 @@
     ]
   }
 }
+
 
