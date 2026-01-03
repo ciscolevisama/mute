@@ -8,7 +8,6 @@
           "name": "Mutean 动漫",
           "description": "mutean.com",
           "iconUrl": "https://www.mutean.com/favicon.ico",
-
           "searchConfig": {
             "searchUrl": "https://www.mutean.com/vodsearch/-------------.html?wd={keyword}",
             "searchUseOnlyFirstWord": false,
@@ -16,16 +15,12 @@
             "searchUseSubjectNamesCount": 1,
             "rawBaseUrl": "https://www.mutean.com",
             "requestInterval": 3000,
-
-            /* ===== 步骤 1：搜索条目（已按真实搜索页验证） ===== */
             "subjectFormatId": "indexed",
             "selectorSubjectFormatIndexed": {
               "selectNames": ".module-card-item-title span",
               "selectLinks": ".module-card-item-title a",
               "preferShorterName": true
             },
-
-            /* ===== 步骤 2：线路 / 剧集 ===== */
             "channelFormatId": "index-grouped",
             "selectorChannelFormatFlattened": {
               "selectChannelNames": ".anthology-tab a",
@@ -34,16 +29,12 @@
               "selectEpisodesFromList": "a",
               "matchEpisodeSortFromName": "第\\s*(?<ep>\\d+)"
             },
-
             "defaultResolution": "1080P",
             "defaultSubtitleLanguage": "CHS",
-
             "selectMedia": {
               "distinguishSubjectName": true,
               "distinguishChannelName": true
             },
-
-            /* ===== 步骤 3：播放页视频地址 ===== */
             "matchVideo": {
               "enableNestedUrl": true,
               "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
